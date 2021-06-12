@@ -1,0 +1,17 @@
+sections:
+  global:
+    display: Global
+    fields:
+      -
+        handle: nav_items
+        field:
+          inline: false
+          options:
+            Home: Home
+            Projects: Projects
+            Blog: Blog
+            Contact: Contact
+          display: 'Nav Items'
+          type: checkboxes
+          icon: checkboxes
+          listable: hidden

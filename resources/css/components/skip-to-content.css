@@ -1,0 +1,13 @@
+.skip-to-content {
+    @apply absolute bg-accent text-text font-bold px-6 py-4 m-3;
+    transform: translateX(-200%);
+    z-index: 9999;
+
+    &:focus {
+        transform: translateX(0%);
+    }
+
+    &:hover {
+        @apply bg-text text-accent;
+    }
+}

@@ -1,0 +1,37 @@
+.mobile-nav {
+    @apply fixed z-30 flex items-start justify-center border-2 rounded-md bg-background border-text;
+    transition: 0.3s ease-in-out;
+    transition-property: transform;
+    will-change: transform;
+    top: 75px;
+    right: 14px;
+
+    @screen sm {
+        @apply hidden;
+    }
+}
+
+.mobile-nav .nav {
+    &__list {
+        @apply flex flex-col items-center w-full;
+    }
+    
+    &__item {
+        @apply w-full;
+    }
+
+    &__item-inner {
+        @apply inline-block w-full px-4 py-2 mb-0;
+        transition: 0.2s ease-in;
+        transition-property: background-color;
+        will-change: background-color;
+
+        &:hover {
+            @apply text-text bg-background_lighter;
+        }
+
+        &--active {
+            @apply bg-text text-background_lighter;
+        }
+    }
+}

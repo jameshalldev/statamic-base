@@ -1,0 +1,26 @@
+title: 'Meta images'
+fields:
+  -
+    handle: og_image
+    field:
+      mode: grid
+      restrict: false
+      allow_uploads: true
+      max_files: 1
+      display: 'OG Image'
+      type: assets
+      icon: assets
+      instructions: 'Recommended dimensions: 1200 x 627 (1.91/1) – Maximum size: 5mb – If empty, a generic image will be used instead.'
+      listable: hidden
+  -
+    handle: twitter_image
+    field:
+      mode: grid
+      restrict: false
+      allow_uploads: true
+      max_files: 1
+      display: 'Twitter image'
+      type: assets
+      icon: assets
+      instructions: 'Recommended dimensions: 500 x 250 – Maximum size: 5mb – If empty, a generic image will be used instead.'
+      listable: hidden

@@ -1,0 +1,20 @@
+<ul class="contact-info {{ classes }}">
+    {{ if site_details:phone_number }}
+        <li class="contact-info__item">
+            <a target="_blank" class="contact-info__anchor" href="tel:{{ site_details:phone_number }}" rel="noreferrer">{{ site_details:phone_number }}</a>
+            <span class="contact-info__icon">{{ partial:partials/icons/phone }}</span>
+        </li>
+    {{ endif }}
+    {{ if site_details:email_address }}
+        <li class="contact-info__item">
+            <a target="_blank" class="contact-info__anchor" href="mailto:{{ site_details:email_address }}" rel="noreferrer">{{ site_details:email_address }}</a>
+            <span class="contact-info__icon">{{ partial:partials/icons/email }}</span>
+        </li>
+    {{ endif }}
+    {{ if site_details:location }}
+        <li class="contact-info__item mb-0">
+            <a target="_blank" class="contact-info__anchor" href="https://goo.gl/maps/UewrmR26du59LJAg6" rel="noreferrer">{{ site_details:location }}</a>
+            <span class="contact-info__icon">{{ partial:partials/icons/pin }}</span>
+        </li>
+    {{ endif }}
+</ul>

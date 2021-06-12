@@ -1,0 +1,66 @@
+sections:
+  general:
+    display: General
+    fields:
+      -
+        handle: website_title
+        field:
+          input_type: text
+          display: 'Website title'
+          type: text
+          icon: text
+          listable: hidden
+          validate:
+            - required
+      -
+        handle: phone_number
+        field:
+          input_type: text
+          character_limit: 11
+          display: 'Phone number'
+          type: text
+          icon: text
+          listable: hidden
+      -
+        handle: email_address
+        field:
+          input_type: text
+          display: 'Email address'
+          type: text
+          icon: text
+          listable: hidden
+      -
+        handle: location
+        field:
+          input_type: text
+          display: Location
+          type: text
+          icon: text
+          listable: hidden
+  social_media:
+    display: 'Social media'
+    fields:
+      -
+        handle: instagram
+        field:
+          input_type: text
+          display: Instagram
+          type: text
+          icon: text
+          listable: hidden
+      -
+        handle: twitter
+        field:
+          input_type: text
+          display: Twitter
+          type: text
+          icon: text
+          listable: hidden
+      -
+        handle: linkedin
+        field:
+          input_type: text
+          display: LinkedIn
+          type: text
+          icon: text
+          listable: hidden

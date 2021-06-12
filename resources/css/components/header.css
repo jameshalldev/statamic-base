@@ -1,0 +1,55 @@
+.header {
+    @apply fixed z-20 flex py-0 font-bold border-b-2 bg-background_dark border-background;
+    transition: 0.3s ease-in-out;
+    transition-property: border, transform;
+    will-change: border, transform;
+    height: 70px;
+
+
+    &--scrolled {
+        @apply border-b-2 border-background_light;
+    }
+
+    &__inner {
+        @apply flex flex-row items-center justify-between w-full;
+    }
+
+
+    &__site-title {
+        @apply flex items-center mb-0 text-lg font-bold no-underline;
+    }
+
+    &__site-logo {
+        @apply w-6 h-6 ml-3 fill-current text-accent;
+    }
+
+    &__nav {
+        @apply no-underline;
+    }
+
+    &__nav-toggle {
+        @apply z-40 block rounded-full cursor-pointer fill-current text-text;
+        will-change: background;
+        transition: 0.2s ease-in;
+        transition-property: background;
+        height: 50px;
+        width: 50px;
+        padding: 5px;
+
+        &:focus {
+            @apply outline-none bg-background_lighter;
+        }
+        
+        &:hover {
+            @apply bg-background_lighter;
+        }
+        
+        &.active {
+            @apply bg-background_lighter;
+        }
+        
+        @screen sm {
+            @apply hidden;
+        }
+    }
+}

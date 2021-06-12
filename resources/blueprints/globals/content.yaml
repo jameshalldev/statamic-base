@@ -1,0 +1,51 @@
+sections:
+  homepage:
+    display: Homepage
+    fields:
+      -
+        handle: about_image
+        field:
+          mode: grid
+          restrict: false
+          allow_uploads: true
+          max_files: 1
+          display: 'About – Image'
+          type: assets
+          icon: assets
+          listable: hidden
+          instructions: 'For best results, use a 1:1 ratio image'
+      -
+        handle: about_header
+        field:
+          display: 'About – Header'
+          type: textarea
+          icon: textarea
+          listable: hidden
+      -
+        handle: about_body
+        field:
+          display: 'About – Body'
+          type: textarea
+          icon: textarea
+          listable: hidden
+      -
+        handle: skills_header
+        field:
+          display: 'Skills – Header'
+          type: textarea
+          icon: textarea
+          listable: hidden
+      -
+        handle: featured_blog_header
+        field:
+          display: 'Featured blog – Header'
+          type: textarea
+          icon: textarea
+          listable: hidden
+      -
+        handle: featured_project_header
+        field:
+          display: 'Featured project – Header'
+          type: textarea
+          icon: textarea
+          listable: hidden

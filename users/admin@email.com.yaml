@@ -1,0 +1,27 @@
+name: Admin
+super: true
+avatar: general/966-9665493_my-profile-icon-blank-profile-image-circle.png
+id: 403ea432-7b6b-4563-85db-6c5802a00727
+password_hash: $2y$10$dc3NdZhK/8iXPvVFveYyW.p4bGdEj0JaLHKTv5RSxRduj1POcBGZm
+preferences:
+  collections:
+    pages:
+      columns:
+        - title
+        - slug
+        - content
+    blog:
+      columns:
+        - title
+        - slug
+        - date
+        - article_content
+  assets:
+    assets:
+      mode: grid
+  forms:
+    contact:
+      columns:
+        - datestamp
+        - name
+        - message

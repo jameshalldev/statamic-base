@@ -1,0 +1,52 @@
+.contact {
+    input, textarea {
+        @apply w-full p-4 rounded bg-background_light;
+        &::placeholder {
+            @apply text-text;
+        }
+    }
+
+    &__input-container {
+        @apply py-2;
+
+        input::placeholder {
+            @apply font-bold;
+        }
+
+        textarea::placeholder {
+            @apply font-bold;
+        }
+
+        .error {
+            @apply border-2 border-red;
+        }
+
+        .g-recaptcha > div {
+            @apply mx-auto;
+        }
+    }
+
+    .success-message {
+        @apply p-4 text-center rounded-md bg-green; 
+    }
+    
+    button {
+        @apply block mx-auto transition-colors ease-in-out;
+    }
+    
+    input:-webkit-autofill,
+    input:-webkit-autofill:hover, 
+    input:-webkit-autofill:focus,
+    textarea:-webkit-autofill,
+    textarea:-webkit-autofill:hover,
+    textarea:-webkit-autofill:focus,
+    select:-webkit-autofill,
+    select:-webkit-autofill:hover,
+    select:-webkit-autofill:focus {
+        -webkit-text-fill-color: #FFF4E5;
+        caret-color: #FFF4E5;
+        -webkit-box-shadow: 0 0 0px 1000px #303644 inset;
+        transition: background-color 5000s ease-in-out 0s;
+        @apply font-bold;
+    }
+}

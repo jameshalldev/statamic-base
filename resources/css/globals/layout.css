@@ -1,0 +1,36 @@
+.panel {
+    @apply w-full min-w-full p-4 pb-12 max-w-none;
+
+    @screen md {
+        @apply p-12 pb-20;
+    }
+}
+
+.section {
+    /* 1400 by default*/
+    @apply max-w-screen-xl mx-auto;
+
+    &--xxl {
+        @apply max-w-screen-xxl;
+    }
+
+    &--xl {
+        @apply max-w-screen-xl;
+    }
+
+    &--lg {
+        @apply max-w-screen-lg;
+    }
+
+    &--md {
+        @apply max-w-screen-md;
+    }
+
+    &--sm {
+        @apply max-w-screen-sm;
+    }
+
+    &--xs {
+        @apply max-w-screen-xs;
+    }
+}

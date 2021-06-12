@@ -1,0 +1,10 @@
+title: Blog
+template: templates/blog-post
+layout: layouts/layout
+revisions: false
+route: '/blog/{slug}'
+date: true
+sort_dir: asc
+date_behavior:
+  past: public
+  future: private

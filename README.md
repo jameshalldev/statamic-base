@@ -1,0 +1,24 @@
+## About Statamic 3
+
+Statamic 3 is the flat-first, Laravel + Git powered CMS designed for building beautiful, easy to manage websites.
+
+> **Note:** This repository contains the code for the Statamic application. To contribute to the core package, visit the [Statamic core package repository][cms-repo].
+
+
+## Learning Statamic
+
+Statamic 3 has extensive [documentation][docs]. We dedicate a significant amount of time and energy every day to improving them, so if something is unclear, feel free to open issues for anything you find confusing or incomplete. We are happy to consider anything you feel will make the docs and CMS better.
+
+## Important Links
+
+- [Statamic Main Site](https://statamic.com)
+- [Statamic 3 Documentation][docs]
+- [Statamic 3 Core Package Repo][cms-repo]
+- [Statamic 3 Migrator](https://github.com/statamic/migrator)
+- [Statamic 3 Development Blog](https://v3.statamic.com)
+- [Statamic Discord][discord]
+
+[docs]: https://statamic.dev/
+[discord]: https://statamic.com/discord
+[contribution]: https://github.com/statamic/cms/blob/master/CONTRIBUTING.md
+[cms-repo]: https://github.com/statamic/cms

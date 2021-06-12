@@ -1,0 +1,26 @@
+.pagination-message {
+    @apply flex justify-center;
+
+    &__inner {
+        @apply flex items-center justify-center px-8 py-4 mt-8 rounded-md bg-background_dark;
+    }
+
+    &__text {
+        @apply mb-0;
+    }
+}
+
+.pagination-controls {
+    @apply flex items-center justify-center py-8 mx-auto mt-auto text-base text-center;
+
+    &__select {
+        @apply px-4 py-2 mx-1 no-underline rounded-md;
+        transition: 0.2s ease-in;
+        transition-property: background-color;
+        will-change: background-color;
+
+        &:hover {
+            @apply no-underline text-text bg-background_light;
+        }
+    }
+}

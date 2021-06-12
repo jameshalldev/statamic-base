@@ -1,0 +1,36 @@
+<article class="blog-post">
+    <div class="blog-post__header">        
+        {{ responsive:banner_image alt="{ banner_image:alt }" class="blog-post__header-inner blog-post__header-image" }}
+        <div class="blog-post__header-inner blog-post__header-image-overlay"></div>
+        <div class="blog-post__header-inner blog-post__header-text section">
+            <h3 class="font-bold blog-post__title text-size-h2">{{ title }}</h3>            
+        </div>
+    </div>
+    <div class="panel">
+        <section class="section section--md">
+            <div class="flex mb-8 blog-post__upper{{ if !disable_social_links }} justify-between{{ endif }}">
+                <div class="flex">
+                    <img class="w-16 h-16 rounded-full" src="{{ user:avatar }}" alt="{{ user:name }}'s avatar image" width="64" height="64">
+                    <div class="flex flex-col justify-center pl-4">
+                        <span class="text-lg">{{ user:name }}</span>
+                        <span class="font-medium blog-post__date text-tiny">{{ date }}</span>
+                    </div>
+                </div>
+                {{ if !disable_social_links }}
+                    {{ partial src="partials/sharing-links" classes="hidden xs:block"}}
+                {{ endif }}
+            </div>
+            <div class="rte">
+                <p class="mb-6 font-bold">{{ excerpt }}</p>
+                {{ article_content }}
+                    {{ partial src="sets/{type}" }}
+                {{ /article_content }}
+            </div>
+            {{ if !disable_social_links }}
+                <hr>
+                {{ partial src="partials/sharing-links" classes="flex items-center flex-col" }}
+                {{ partial src="partials/copy-to-clipboard" }}
+            {{ endif }}
+        </section>
+    </div>
+</article>

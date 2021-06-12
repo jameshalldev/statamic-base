@@ -1,0 +1,81 @@
+sections:
+  homepage_settings:
+    display: 'Homepage settings'
+    fields:
+      -
+        handle: homepage_content
+        field:
+          inline: false
+          options:
+            about: 'About section'
+            skills: 'Skills section'
+            projects: 'Projects section'
+            blog: 'Blog posts section'
+          display: 'Homepage content'
+          type: checkboxes
+          icon: checkboxes
+          listable: hidden
+      -
+        handle: skills
+        field:
+          inline: false
+          options:
+            html: HTML
+            css: CSS
+            javascript: JavaScript
+            git: Git
+            sass: Sass
+            npm: NPM
+            shopify: Shopify
+            liquid: Liquid
+            responsive-design: 'Responsive design'
+          display: Skills
+          type: checkboxes
+          icon: checkboxes
+          listable: hidden
+  navigation_toggles:
+    display: 'Navigation toggles'
+    fields:
+      -
+        handle: nav_items
+        field:
+          inline: true
+          options:
+            Home: Home
+            Projects: Projects
+            Blog: Blog
+            Contact: Contact
+          display: 'Nav items'
+          type: checkboxes
+          icon: checkboxes
+          listable: hidden
+  coming_soon_messages:
+    display: 'Coming soon messages'
+    fields:
+      -
+        handle: enable_messages
+        field:
+          inline: false
+          display: 'Enable messages'
+          type: checkboxes
+          icon: checkboxes
+          listable: hidden
+          options:
+            blog-card: Blog
+            projects-card: Projects
+      -
+        handle: blog_message_text
+        field:
+          input_type: text
+          display: 'Blog – Message text'
+          type: text
+          icon: text
+          listable: hidden
+      -
+        handle: projects_message_text
+        field:
+          input_type: text
+          display: 'Projects – Message text'
+          type: text
+          icon: text
+          listable: hidden

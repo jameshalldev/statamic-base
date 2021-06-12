@@ -1,0 +1,17 @@
+<ul class="text-base {{ classes }}">
+    {{ if site_details:instagram }}
+        <li class="mr-4"><a class="text-accent" href="{{ site_details:instagram }}" target="_blank" rel="noreferrer"><span class="visually-hidden">Instagram</span><span class="fill-current">{{ partial:partials/icons/instagram }}</span></a></li>
+    {{ endif }}
+    {{ if site_details:twitter }}
+        <li class="mr-4"><a class="text-accent" href="https://twitter.com/{{ site_details:twitter }}" target="_blank" rel="noreferrer"><span class="visually-hidden">Twitter</span><span class="fill-current">{{ partial:partials/icons/twitter }}</span></a></li>
+    {{ endif }}
+    {{ if site_details:linkedin }}
+        <li class="mr-4"><a class="text-accent" href="https://www.linkedin.com/in/{{ site_details:linkedin }}" target="_blank" rel="noreferrer"><span class="visually-hidden">LinkedIn</span><span class="fill-current">{{ partial:partials/icons/linkedin }}</span></a></li>
+    {{ endif }}
+    {{ if site_details:github }}
+        <li class="mr-4"><a class="text-accent" href="https://github.com/{{ site_details:github }}" target="_blank" rel="noreferrer"><span class="visually-hidden">GitHub</span><span class="fill-current">{{ partial:partials/icons/github }}</span></a></li>
+    {{ endif }}
+    {{ if site_details:codepen }}
+        <li class="mr-4"><a class="text-accent" href="{{ site_details:codepen }}" target="_blank" rel="noreferrer"><span class="visually-hidden">CodePen</span><span class="fill-current">{{ partial:partials/icons/codepen }}</span></a></li>
+    {{ endif }}
+</ul>

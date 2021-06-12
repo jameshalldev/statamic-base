@@ -1,0 +1,19 @@
+/* Headroom default */
+
+.headroom {
+    will-change: transform;
+}
+
+.headroom--pinned {
+    transform: translateY(0%);
+}
+
+.headroom--unpinned {
+    transform: translateY(-100%);
+}
+
+/* Hiding mobile nav */
+
+.headroom--unpinned + .mobile-nav {
+    transform: translateX(calc(100% + 25px))
+}

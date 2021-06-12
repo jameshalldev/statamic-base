@@ -1,0 +1,31 @@
+.desktop-nav {
+    @apply hidden;
+    @screen sm {
+        @apply block;
+    }
+}
+
+.desktop-nav .nav {
+    &__list {
+        @apply flex;
+    }
+    
+    &__item {
+        @apply ml-2;
+    }
+
+    &__item-inner {
+        @apply inline-block py-2 px-4 mb-0 rounded-md;
+        transition: 0.2s ease-in;
+        transition-property: background-color;
+        will-change: background-color;
+
+        &:hover {
+            @apply text-text bg-background_light;
+        }
+
+        &--active {
+            @apply bg-background_light;
+        }
+    }
+}

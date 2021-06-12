@@ -1,0 +1,170 @@
+title: 'Blog post'
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: title
+        field:
+          type: text
+          required: true
+          validate:
+            - required
+      -
+        handle: banner_image
+        field:
+          mode: grid
+          restrict: false
+          allow_uploads: true
+          max_files: 1
+          display: 'Banner image'
+          type: assets
+          icon: assets
+          listable: hidden
+          instructions: 'Recommended dimensions: 1920 × 750'
+      -
+        handle: excerpt
+        field:
+          display: Excerpt
+          type: textarea
+          icon: textarea
+          listable: hidden
+      -
+        handle: article_content
+        field:
+          always_show_set_button: true
+          buttons:
+            - h2
+            - h3
+            - bold
+            - italic
+            - unorderedlist
+            - orderedlist
+            - quote
+            - anchor
+            - image
+            - table
+            - code
+            - codeblock
+            - underline
+            - strikethrough
+          save_html: false
+          toolbar_mode: fixed
+          link_noopener: false
+          link_noreferrer: true
+          target_blank: true
+          reading_time: true
+          fullscreen: true
+          allow_source: true
+          display: 'Article content'
+          type: bard
+          icon: bard
+          listable: hidden
+          sets:
+            code_block:
+              display: 'Code block'
+              fields:
+                -
+                  handle: language_selector
+                  field:
+                    options:
+                      html: HTML
+                      css: CSS
+                      javascript: JavaScript
+                      liquid: Liquid
+                    inline: false
+                    cast_booleans: false
+                    display: 'Language selector'
+                    type: radio
+                    icon: radio
+                    instructions: 'Select language of code block'
+                    listable: true
+                -
+                  handle: code
+                  field:
+                    theme: material
+                    mode: htmlmixed
+                    indent_type: tabs
+                    indent_size: 4
+                    key_map: default
+                    line_numbers: true
+                    line_wrapping: true
+                    display: Code
+                    type: code
+                    icon: code
+                    listable: hidden
+            blockquote:
+              display: Blockquote
+              fields:
+                -
+                  handle: blockquote_text
+                  field:
+                    display: 'Blockquote text'
+                    type: textarea
+                    icon: textarea
+                    listable: hidden
+            image:
+              display: Image
+              fields:
+                -
+                  handle: image_src
+                  field:
+                    mode: grid
+                    restrict: false
+                    allow_uploads: true
+                    display: 'Image src'
+                    type: assets
+                    icon: assets
+                    listable: hidden
+                    max_files: 1
+                -
+                  handle: caption
+                  field:
+                    input_type: text
+                    display: Caption
+                    type: text
+                    icon: text
+                    listable: hidden
+  sidebar:
+    display: Sidebar
+    fields:
+      -
+        handle: date
+        field:
+          type: date
+          required: true
+          validate:
+            - required
+      -
+        handle: slug
+        field:
+          type: slug
+          required: true
+          localizable: true
+          validate:
+            - required
+      -
+        handle: user
+        field:
+          mode: select
+          display: User
+          type: users
+          icon: users
+          listable: hidden
+          max_items: 1
+          validate:
+            - required
+      -
+        handle: disable_social_links
+        field:
+          display: 'Disable social links'
+          type: toggle
+          icon: toggle
+          listable: hidden
+  meta_data:
+    display: 'Meta data'
+    fields:
+      -
+        import: meta_details
+      -
+        import: meta_images

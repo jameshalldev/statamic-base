@@ -1,0 +1,9 @@
+{{ technology_stack as="loop" }}
+    <ul class="technology-stack">
+        {{ loop }}
+            <li class="technology-stack__item">
+                {{ partial src="partials.icons.{value}" }}
+            </li>
+        {{ /loop }}
+    </ul>
+{{ /technology_stack }}

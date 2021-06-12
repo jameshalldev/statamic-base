@@ -1,0 +1,38 @@
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: name
+        field:
+          input_type: text
+          character_limit: 100
+          type: text
+          icon: text
+          listable: hidden
+          validate:
+            - required
+          placeholder: Name
+      -
+        handle: email
+        field:
+          input_type: text
+          character_limit: 100
+          type: text
+          icon: text
+          listable: hidden
+          validate:
+            - required
+            - email
+          placeholder: Email
+      -
+        handle: message
+        field:
+          character_limit: '1000'
+          display: Message
+          type: textarea
+          icon: textarea
+          listable: hidden
+          placeholder: 'Your message'
+          validate:
+            - required

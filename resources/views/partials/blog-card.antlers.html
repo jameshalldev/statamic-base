@@ -1,0 +1,10 @@
+<a class="w-full h-full {{ classes }}" href="{{ url }}">
+    <article class="blog-card">
+        {{ responsive:banner_image alt="{ banner_image:alt }" class="blog-card__inner blog-card__image" }}
+        <div class="blog-card__inner blog-card__image-overlay"></div>
+        <div class="blog-card__inner blog-card__text">
+            <h3 class="blog-card__title text-size-h2 font-bold">{{ title }}</h3>
+            <p class="blog-card__date">{{ date }}</p>
+        </div>
+    </article>
+</a>

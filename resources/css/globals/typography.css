@@ -1,0 +1,84 @@
+html {
+    @apply text-base font-semibold;
+}
+
+body {
+  @apply leading-relaxed;
+}
+
+h1, h2, h3, h4, h5 {
+  @apply mb-4 font-bold leading-tight;
+}
+
+a {
+  @apply underline text-text;
+  transition: 0.2s ease-in;
+  transition-property: color, fill;
+  will-change: background, transform;
+  
+  &:hover {
+  @apply text-accent_light;
+  }
+}
+
+p {
+  @apply mb-2 text-base;
+}
+
+hr {
+  @apply my-12 border-t-2 border-background_lighter;
+}
+
+/* Pseudo-headers */
+
+.text-size-h1 {
+  @apply mb-8 font-bold;
+
+  font-size: 2.375rem;
+  @screen xs {
+    font-size: 2.75rem;
+  }
+  @screen sm {
+    font-size: 3.25rem;
+  }
+}
+
+.text-size-h2 {
+  font-size: 1.625rem;
+  @screen xs {
+    font-size: 2rem;
+  }
+  @screen sm {
+    font-size: 2.5rem;
+  }
+}
+
+.text-size-h3 {
+  font-size: 1.125rem;
+  @screen xs {
+    font-size: 1.5rem;
+  }
+  @screen sm {
+    font-size: 2rem;
+  }
+}
+
+.text-size-h4 {
+  font-size: 1.125rem;
+  @screen xs {
+    font-size: 1.25rem;
+  }
+  @screen sm {
+    font-size: 1.5rem;
+  }
+}
+
+.text-size-h5 {
+  @apply italic text-gray;
+  font-size: 1.125rem;
+}
+
+.text-size-h6 {
+  @apply italic text-gray;
+  font-size: 1rem;
+}

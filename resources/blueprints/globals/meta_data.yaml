@@ -1,0 +1,6 @@
+sections:
+  main:
+    display: 'Global meta data'
+    fields:
+      -
+        import: meta_details

@@ -1,0 +1,25 @@
+<div class="{{ container_classes }}">
+    {{ collection :from="collection_type" :paginate="pagination_value" as="loop" }}
+        <div class="grid grid-flow-row grid-cols-{{ cols_mobile }} lg:grid-cols-{{ cols_desktop }} {{ grid_gap }}">
+            {{ loop }}
+                {{ partial :src="card_type" }} 
+            {{ /loop }}
+        </div>
+
+        {{ if show_controls == "true"  }}
+                {{ paginate }}
+                    {{ if next_page || prev_page }}
+                        <div class="pagination-controls">
+                            {{ if prev_page }}
+                                <a class="pagination-controls__select" href="{{ prev_page }}">&larr; Previous</a>
+                            {{ endif }}
+
+                            {{ if next_page }}
+                                <a class="pagination-controls__select" href="{{ next_page }}">Next &rarr;</a>
+                            {{ endif }}
+                        </div>
+                    {{ endif }}
+                {{ /paginate }}
+        {{ endif }}
+    {{ /collection }}
+</div>

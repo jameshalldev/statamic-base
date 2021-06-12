@@ -1,0 +1,20 @@
+.contact-info {
+    @apply text-base;
+    
+    &__item {  
+        @apply mb-4 flex flex-row-reverse justify-end;
+    }
+    
+    &__anchor {
+        @apply no-underline;
+    }
+
+    &__icon {
+        @apply mr-4;
+
+        svg {
+            @apply text-accent fill-current;
+            transition: all 0.2s ease-in;
+        }
+    }
+}

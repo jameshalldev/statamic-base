@@ -1,0 +1,17 @@
+.copy-to-clipboard {
+    @apply flex items-center justify-center px-6 py-4 mx-auto mt-12 rounded-md bg-background_light;
+    width: 255px;
+    cursor: copy;
+
+    &:focus {
+        @apply outline-none bg-background_lighter;
+    }
+    
+    &:hover {
+        @apply bg-background_lighter;
+    }
+    
+    &.active {
+        @apply bg-background_lighter;
+    }
+}

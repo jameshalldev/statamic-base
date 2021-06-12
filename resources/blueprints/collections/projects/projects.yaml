@@ -1,0 +1,90 @@
+title: Projects
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: title
+        field:
+          type: text
+          required: true
+          validate:
+            - required
+      -
+        handle: description
+        field:
+          character_limit: '500'
+          display: Description
+          type: textarea
+          icon: textarea
+          listable: hidden
+      -
+        handle: technology_stack
+        field:
+          inline: true
+          options:
+            html: HTML
+            css: CSS
+            javascript: JavaScript
+            jquery: jQuery
+            sass: Sass
+            liquid: Liquid
+            ruby: Ruby
+            php: PHP
+            react: React.js
+            vue: Vue.js
+            angular: Angular
+          display: 'Technology stack'
+          type: checkboxes
+          icon: checkboxes
+          listable: hidden
+      -
+        handle: github
+        field:
+          input_type: text
+          display: Github
+          type: text
+          icon: text
+          listable: hidden
+      -
+        handle: view
+        field:
+          input_type: text
+          display: View
+          type: text
+          icon: text
+          listable: hidden
+  sidebar:
+    display: Sidebar
+    fields:
+      -
+        handle: slug
+        field:
+          type: slug
+          required: true
+          localizable: true
+          validate:
+            - required
+      -
+        handle: date
+        field:
+          type: date
+          required: true
+          mode: single
+          time_enabled: false
+          time_required: false
+          earliest_date: '1900-01-01'
+          full_width: false
+          inline: false
+          columns: 1
+          rows: 1
+          display: Date
+          icon: date
+          listable: hidden
+          validate:
+            - required
+  meta_data:
+    display: 'Meta data'
+    fields:
+      -
+        import: meta_details

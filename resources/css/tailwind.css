@@ -1,0 +1,32 @@
+/* Tailwind styles */
+@import "tailwindcss/utilities";
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+
+/* Global */
+@import "globals/fonts";
+@import "globals/global";
+@import "globals/helpers";
+@import "globals/layout";
+@import "globals/rte";
+@import "globals/typography";
+
+/* Components */
+@import "components/blog-card";
+@import "components/blog-post";
+@import "components/contact-info";
+@import "components/contact";
+@import "components/copy-to-clipboard";
+@import "components/desktop-nav";
+@import "components/footer";
+@import "components/header";
+@import "components/header-scroll";
+@import "components/home";
+@import "components/mobile-nav";
+@import "components/pagination";
+@import "components/projects-card";
+@import "components/skip-to-content.css";
+
+/* Core */
+@import "core/buttons";
+@import "core/forms";

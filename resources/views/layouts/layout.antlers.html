@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>{{ meta_title ?? site_meta:meta_title }}</title>
+        <meta name="description" content="{{ meta_description ?? site_meta:meta_description }}">
+        <!-- <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet"> -->
+        <link rel="stylesheet" href="{{ mix src='css/tailwind.css' }}">
+        {{ if collection == 'blog' }}
+            <link rel="stylesheet" href="/css/prism.css">
+        {{ endif }}
+        
+        {{# Favicons #}}
+        <link rel="apple-touch-icon" sizes="57x57" href="/favicons/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="/favicons/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="/favicons/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="/favicons/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="/favicons/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="/favicons/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="/favicons/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="/favicons/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="/favicons/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="/favicons/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
+        <link rel="manifest" href="/favicons/manifest.json">
+        <meta name="msapplication-TileColor" content="#262B36">
+        <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+        <meta name="theme-color" content="#262B36">
+        
+        {{ if title == 'Contact' }}{{ captcha:head }}{{ endif }}
+
+        {{ partial src="meta/meta-images" }}
+
+        {{# Global site tag (gtag.js) - Google Analytics #}}
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-Z0TD91X99Y"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-Z0TD91X99Y');
+        </script>
+    </head>
+    <body class="body preload">
+        <a tabindex="0" class="skip-to-content" href="#content">Skip to content</a>
+
+        {{ partial:partials/global/header }}
+
+        <main class="main" id="content"> 
+            {{ template_content }}
+        </main>
+
+        {{ partial:partials/global/footer }}
+        
+        <script type="text/javascript" async="" src="{{ mix src='js/site.js' }}"></script>
+    </body>
+</html>

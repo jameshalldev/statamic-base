@@ -1,0 +1,22 @@
+<div class="panel">
+    <section class="section">
+        <h1 class="text-center text-size-h1">{{ title }}</h1> 
+        {{ 
+            partial:partials/pagination 
+            collection_type="blog"
+            card_type="blog-card"
+            container_classes=""
+        
+            {{# Show pagination controls #}}
+            show_controls="true"
+        
+            {{# No of loops per page #}}
+            pagination_value="4"
+        
+            {{# No of columns #}}
+            cols_mobile="1"
+            cols_desktop="1"
+            grid_gap="gap-4 sm:gap-8"
+        }}
+    </section>
+</div>

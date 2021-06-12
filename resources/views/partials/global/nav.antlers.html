@@ -1,0 +1,17 @@
+<nav id="{{ id }}" class="{{ classes }}" {{ data }}>
+    <ul class="nav__list">
+        {{ nav:main }}
+            {{ site_settings.nav_items }}
+                {{ if value == title }}
+                    <li class="nav__item">
+                        {{ if url != is_current }}
+                            <a class="nav__item-inner no-underline{{ if url | segment:1 == is_parent }} nav__item-inner--active{{ endif }}" href="{{ url }}">{{ title }}</a>
+                        {{ else }}
+                            <span class="nav__item-inner nav__item-inner--active pointer-events-none">{{ title }}</span>
+                        {{ endif }}
+                    </li>
+                {{ endif }}
+            {{ /site_settings.nav_items }}
+        {{ /nav:main }}
+    </ul>
+</nav>

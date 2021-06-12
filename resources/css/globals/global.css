@@ -1,0 +1,25 @@
+.body {
+    @apply flex flex-col min-h-screen antialiased font-semibold bg-background text-text;
+    font-family: 'Nunito', system-ui;
+}
+
+.main {
+    margin-top: 70px;
+}
+
+/* Highlighted text */
+::selection {
+    @apply bg-accent_bold text-text;
+  }
+
+::-moz-selection {
+    @apply bg-accent_bold text-text;
+}
+
+/* No animations on preload */
+.preload * {
+    -webkit-transition: none !important;
+    -moz-transition: none !important;
+    -ms-transition: none !important;
+    -o-transition: none !important;
+}

@@ -1,0 +1,39 @@
+.projects-card {
+   @apply flex flex-col justify-start block w-full p-6 rounded-md bg-text bg-background_light;
+   @screen sm {
+      @apply p-12;
+   }
+
+   &__title {
+      @apply mb-4 leading-none text-text;
+      font-size: 28px;
+      @screen md {
+          font-size: 3.714285714vw;
+      }
+      @screen lg {
+         font-size: 38px;
+      }
+   }
+
+   &__date {
+      @apply mb-4 text-tiny text-accent_light;
+   }
+
+   &__desc {
+      @apply mb-4 text-text text-tiny;
+   }
+
+   &__bottom {
+      @apply mt-auto;
+   }
+
+   .technology-stack {
+      @apply flex flex-wrap mb-4;
+
+      &__item {
+         @apply mr-2 fill-current text-accent;
+         width: 24px;
+         height: 24px;
+      }
+   }
+}

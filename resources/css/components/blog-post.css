@@ -1,0 +1,45 @@
+.blog-post {
+    &__header {
+        @apply min-h-0 h-0 relative;
+        padding-top: 33.33% !important;
+    }
+
+    &__header-inner {
+        @apply absolute top-0 bottom-0 left-0 right-0 w-full h-full;
+    }
+
+    &__header-image {
+        @apply object-cover;
+    }
+
+    &__header-image-overlay {
+        @apply bg-black opacity-25;
+    }
+
+    &__header-text {
+        @apply text-text flex flex-col justify-center items-center p-4 text-center;
+
+        @screen sm {
+            @apply p-12;
+        }
+    }
+
+    &__title {
+        @apply m-0 shadow;
+        text-shadow: 1px 1px 50px black;
+        box-shadow: none;
+
+        font-size: 28px;
+        @screen md {
+            font-size: 3.714285714vw;
+        }
+        @screen xl {
+            font-size: 52px;
+        }
+    }
+}
+
+pre {
+    max-width: 100vw !important;
+    overflow-x: auto;
+}
