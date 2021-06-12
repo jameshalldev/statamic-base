@@ -1,4 +1,7 @@
 title: '2. Settings'
 data:
-  blog_message_text: 'More coming soon!'
-  projects_message_text: 'More coming soon!'
+  nav_items:
+    - Home
+    - Projects
+    - Blog
+    - Contact
