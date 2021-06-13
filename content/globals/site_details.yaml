@@ -1,1 +1,11 @@
 title: '1. Details'
+data:
+  website_title: 'Statamic Base'
+  phone_number: '07123456789'
+  email_address: statamic-base@email.com
+  location: Bristol
+  instagram: Instagram
+  twitter: Twitter
+  linkedin: LinkedIn
+  github: Github
+  codepen: CodePen

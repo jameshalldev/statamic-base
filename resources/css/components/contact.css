@@ -9,14 +9,6 @@
     &__input-container {
         @apply py-2;
 
-        input::placeholder {
-            @apply font-bold;
-        }
-
-        textarea::placeholder {
-            @apply font-bold;
-        }
-
         .error {
             @apply border-2 border-red;
         }
@@ -47,6 +39,5 @@
         caret-color: #FFF4E5;
         -webkit-box-shadow: 0 0 0px 1000px #303644 inset;
         transition: background-color 5000s ease-in-out 0s;
-        @apply font-bold;
     }
 }

@@ -2,7 +2,7 @@
     @apply inline-block mt-2 no-underline;
 
     &__inner {
-        @apply block px-6 py-3 font-bold text-white rounded-md bg-accent_bold;
+        @apply block px-6 py-3 text-white rounded-md bg-accent_bold;
         will-change: background, transform;
         transition: 0.2s ease-in;
         transition-property: background, transform;

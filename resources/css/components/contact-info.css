@@ -2,7 +2,7 @@
     @apply text-base;
     
     &__item {  
-        @apply mb-4 flex flex-row-reverse justify-end;
+        @apply flex flex-row-reverse justify-end mb-4;
     }
     
     &__anchor {
@@ -13,7 +13,7 @@
         @apply mr-4;
 
         svg {
-            @apply text-accent fill-current;
+            @apply fill-current text-accent;
             transition: all 0.2s ease-in;
         }
     }

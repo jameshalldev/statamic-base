@@ -1,5 +1,5 @@
 .header {
-    @apply fixed z-20 flex py-0 font-bold border-b-2 bg-background_dark border-background;
+    @apply fixed z-20 flex py-0 border-b-2 bg-header_bg border-header_border;
     transition: 0.3s ease-in-out;
     transition-property: border, transform;
     will-change: border, transform;
@@ -7,7 +7,7 @@
 
 
     &--scrolled {
-        @apply border-b-2 border-background_light;
+        @apply border-b-2 border-header_border;
     }
 
     &__inner {
@@ -16,7 +16,7 @@
 
 
     &__site-title {
-        @apply flex items-center mb-0 text-lg font-bold no-underline;
+        @apply flex items-center mb-0 text-lg no-underline;
     }
 
     &__site-logo {

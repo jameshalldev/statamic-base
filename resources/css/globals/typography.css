@@ -1,5 +1,5 @@
 html {
-    @apply text-base font-semibold;
+    @apply text-base;
 }
 
 body {
@@ -7,7 +7,7 @@ body {
 }
 
 h1, h2, h3, h4, h5 {
-  @apply mb-4 font-bold leading-tight;
+  @apply mb-4 leading-tight;
 }
 
 a {
@@ -17,7 +17,7 @@ a {
   will-change: background, transform;
   
   &:hover {
-  @apply text-accent_light;
+    @apply underline;
   }
 }
 
@@ -26,13 +26,13 @@ p {
 }
 
 hr {
-  @apply my-12 border-t-2 border-background_lighter;
+  @apply my-12 border-t-2 border-gray-500;
 }
 
 /* Pseudo-headers */
 
 .text-size-h1 {
-  @apply mb-8 font-bold;
+  @apply mb-8;
 
   font-size: 2.375rem;
   @screen xs {
@@ -74,11 +74,11 @@ hr {
 }
 
 .text-size-h5 {
-  @apply italic text-gray;
+  @apply italic text-text_light;
   font-size: 1.125rem;
 }
 
 .text-size-h6 {
-  @apply italic text-gray;
+  @apply italic text-text_light;
   font-size: 1rem;
 }

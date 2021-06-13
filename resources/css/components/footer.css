@@ -1,6 +1,10 @@
 .footer {
-    @apply px-6 py-10 font-bold bg-background_dark;
+    @apply px-6 py-10 border-t-2 text-footer_text bg-footer_bg border-footer_border;
     margin-top: auto !important;
+
+    a {
+        @apply text-footer_text;
+    }
     
     @screen md {
         @apply px-12 py-12;

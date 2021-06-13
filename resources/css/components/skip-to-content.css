@@ -1,5 +1,5 @@
 .skip-to-content {
-    @apply absolute bg-accent text-text font-bold px-6 py-4 m-3;
+    @apply absolute px-6 py-4 m-3 bg-accent text-text;
     transform: translateX(-200%);
     z-index: 9999;
 

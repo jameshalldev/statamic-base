@@ -3,7 +3,7 @@
         {{ responsive:banner_image alt="{ banner_image:alt }" class="blog-post__header-inner blog-post__header-image" }}
         <div class="blog-post__header-inner blog-post__header-image-overlay"></div>
         <div class="blog-post__header-inner blog-post__header-text section">
-            <h3 class="font-bold blog-post__title text-size-h2">{{ title }}</h3>            
+            <h3 class="blog-post__title text-size-h2">{{ title }}</h3>            
         </div>
     </div>
     <div class="panel">
@@ -21,7 +21,7 @@
                 {{ endif }}
             </div>
             <div class="rte">
-                <p class="mb-6 font-bold">{{ excerpt }}</p>
+                <p class="mb-6">{{ excerpt }}</p>
                 {{ article_content }}
                     {{ partial src="sets/{type}" }}
                 {{ /article_content }}
@@ -29,7 +29,6 @@
             {{ if !disable_social_links }}
                 <hr>
                 {{ partial src="partials/sharing-links" classes="flex items-center flex-col" }}
-                {{ partial src="partials/copy-to-clipboard" }}
             {{ endif }}
         </section>
     </div>

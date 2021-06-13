@@ -14,19 +14,31 @@ module.exports = {
       extend: {
         colors: {
             // Core colours
-            text: '#fff4e7',
-            background: '#262b35', 
-            background_light: '#303644', 
-            background_lighter: '#353a46', 
-            background_dark: '#20252D', 
-            background_darker: '#16191f', 
+            background_light: '#BADB4D', 
+            background_lighter: '#4DD6DB', 
+            background_dark: '#574DDB', 
+            background_darker: '#DB4DB7', 
+            
+            // General
+            text: 'var(--text)',
+            text_light: 'var(--text_light)',
+            background: 'var(--background)',
 
-            gray: '#c4c5e2',
+            text_dark: 'var(--text_dark)',
+            background_dark: 'var(--background_dark)', 
 
-            accent: '#6F74F1',
-            accent_bold: '#6164e0',
-            accent_light: '#878bff',
+            // GLobals
+            header_bg: 'var(--background)',
+            header_border: '#E5E7EB',
 
+            footer_bg: 'var(--background_dark)',
+            footer_text: 'var(--text_dark)',
+            footer_border: '#E5E7EB',
+            
+            accent: '#038BFF',
+            accent_bold: '#0070CF',
+            accent_light: '#36A3FF',
+            
             // General colours
             red: "#F56565",
             green: "#64BD63",
