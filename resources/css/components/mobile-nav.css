@@ -27,11 +27,11 @@
         will-change: background-color;
 
         &:hover {
-            @apply text-text bg-background_lighter;
+            @apply text-text;
         }
 
         &--active {
-            @apply bg-text text-background_lighter;
+            
         }
     }
 }

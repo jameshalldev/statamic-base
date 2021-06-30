@@ -1,16 +1,10 @@
 <header class="panel header headroom headroom--pinned" data-header> 
     <div class="section header__inner">
-        {{ if title == 'Home' }}
-            <div class="pointer-events-none header__site-title">
+        <a tabindex="0" class="no-underline" href="/">
+            <div class="header__site-title">
                 <span>{{ site_details:website_title }}</span>
             </div>
-        {{ else }}
-            <a tabindex="0" class="no-underline" href="/">
-                <div class="header__site-title">
-                    <span>{{ site_details:website_title }}</span>
-                </div>
-            </a>
-        {{ endif }}
+        </a>
         
         {{ partial:partials/global/nav id="desktop-nav" classes="desktop-nav nav"}}
         

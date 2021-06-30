@@ -13,28 +13,30 @@ module.exports = {
       },
       extend: {
         colors: {
-            // Core colours
-            background_light: '#BADB4D', 
-            background_lighter: '#4DD6DB', 
-            background_dark: '#574DDB', 
-            background_darker: '#DB4DB7', 
-            
             // General
+            // --- Normal
             text: 'var(--text)',
             text_light: 'var(--text_light)',
             background: 'var(--background)',
 
+            // --- Dark
             text_dark: 'var(--text_dark)',
             background_dark: 'var(--background_dark)', 
 
             // GLobals
+            // --- Header
             header_bg: 'var(--background)',
-            header_border: '#E5E7EB',
+            header_border: 'var(--gray--light)',
 
-            footer_bg: 'var(--background_dark)',
-            footer_text: 'var(--text_dark)',
-            footer_border: '#E5E7EB',
+            // --- Footer
+            footer_bg: 'var(--gray--light)',
+            footer_text: 'var(--text_light)',
+            footer_border: 'var(--gray--light)',
+
+            // Misc
+            border: 'var(--gray--light)',
             
+            // Accent colours
             accent: '#038BFF',
             accent_bold: '#0070CF',
             accent_light: '#36A3FF',

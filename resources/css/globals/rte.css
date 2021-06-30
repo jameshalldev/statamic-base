@@ -39,7 +39,7 @@
     }
 
     pre {
-        @apply rounded-md bg-background_darker;
+        @apply rounded-md bg-border;
         background-color: #16191f !important;
         margin-top: 24px !important;
         margin-bottom: 24px !important;
@@ -52,7 +52,7 @@
     }
 
     .blockquote {
-        @apply flex items-start p-8 my-4 text-xl italic rounded-md bg-background_lighter;
+        @apply flex items-start p-8 my-4 text-xl italic rounded-md ;
 
         &__icon svg {
             @apply block w-4 h-4 fill-current text-text;

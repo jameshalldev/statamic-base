@@ -37,15 +37,15 @@
         padding: 5px;
 
         &:focus {
-            @apply outline-none bg-background_lighter;
+            @apply outline-none  ;
         }
         
         &:hover {
-            @apply bg-background_lighter;
+            @apply  ;
         }
         
         &.active {
-            @apply bg-background_lighter;
+            @apply  ;
         }
         
         @screen sm {
